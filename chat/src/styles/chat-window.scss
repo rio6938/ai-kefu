@@ -1,0 +1,38 @@
+/* 聊天窗的全局布局样式, 独立部署时整页就是聊天窗 */
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', Arial, sans-serif;
+  color: var(--el-text-color-primary);
+  background: var(--el-fill-color-lighter);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 页面内嵌入 iframe 时限制最大宽度, 独立打开时铺满 */
+#app > .chat-window {
+  max-width: 100%;
+  height: 100%;
+}
+
+/* 悬浮组件嵌入模式: 面板铺满父容器, 去掉页面底色与整页留白 */
+html.is-embed,
+html.is-embed body,
+html.is-embed #app {
+  background: transparent;
+  overflow: hidden;
+}
+
+html.is-embed #app > .chat-window {
+  height: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}

@@ -1,0 +1,1 @@
+import{F as e,b as t}from"./_plugin-vue_export-helper-DVdApzbJ.js";e();function n(e,n){return{lang:t(()=>Object.assign({},e.zh_CN,n?.componentLang))}}export{n as t};

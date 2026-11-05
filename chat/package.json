@@ -1,0 +1,28 @@
+{
+  "name": "ai-kefu-chat",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI 智能客服的网页聊天窗，独立构建独立部署",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "easyjssdk": "2.0.5",
+    "ele-admin-plus": "1.7.0",
+    "element-plus": "^2.14.5",
+    "vue": "^3.5.42",
+    "vue-i18n": "^11.4.17"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.1",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "sass": "^1.104.1",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.0",
+    "vue-tsc": "^3.3.11"
+  }
+}

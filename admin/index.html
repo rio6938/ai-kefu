@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="icon" href="/favicon.ico" />
+    <script>
+      (function () {
+        const metaEl = document.createElement('meta');
+        metaEl.setAttribute('name', 'viewport');
+        let responsive = true;
+        try {
+          responsive = JSON.parse(
+            localStorage.getItem('theme') || '{}'
+          ).responsive;
+        } catch (e) {
+          console.error(e);
+        }
+        if (responsive === false) {
+          metaEl.setAttribute('content', 'width=1200, initial-scale=1.0');
+        } else {
+          metaEl.setAttribute(
+            'content',
+            'width=device-width, initial-scale=1.0'
+          );
+        }
+        document.head.appendChild(metaEl);
+      })();
+    </script>
+    <title>ClawAdmin</title>
+    <style>.ele-admin-loading{grid-gap:8px;grid-template-rows:repeat(2,1fr);grid-template-columns:repeat(2,1fr);width:28px;height:28px;animation:1.2s linear infinite loadingRotate;display:grid;position:fixed;top:calc(50% - 14px);left:calc(50% - 14px);transform:rotate(45deg)}.ele-admin-loading>i{background:#2f54eb;border-radius:50%}.ele-admin-loading>i:nth-child(2){opacity:.7}.ele-admin-loading>i:nth-child(3){opacity:.5}.ele-admin-loading>i:nth-child(4){opacity:.3}@keyframes loadingRotate{to{transform:rotate(405deg)}}</style>
+    <script type="module" crossorigin src="/assets/index-BIG0sDdN.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-C0FnF6B9.js">
+    <link rel="modulepreload" crossorigin href="/assets/_plugin-vue_export-helper-DVdApzbJ.js">
+    <link rel="modulepreload" crossorigin href="/assets/use-mobile-96ITnO4d.js">
+    <link rel="modulepreload" crossorigin href="/assets/union-jXT5Goqi.js">
+    <link rel="modulepreload" crossorigin href="/assets/pick-CQzcry18.js">
+    <link rel="modulepreload" crossorigin href="/assets/dayjs.min-QUnUIOl1.js">
+    <link rel="modulepreload" crossorigin href="/assets/advancedFormat-BqWcyKar.js">
+    <link rel="modulepreload" crossorigin href="/assets/preload-helper-BZ1Pz5am.js">
+    <link rel="modulepreload" crossorigin href="/assets/router-BNLEuG7-.js">
+    <link rel="modulepreload" crossorigin href="/assets/use-permission-B4S803zm.js">
+    <link rel="modulepreload" crossorigin href="/assets/BtnItems-D2UByUAA.js">
+    <link rel="modulepreload" crossorigin href="/assets/use-component-lang-BZB4IwyW.js">
+    <link rel="modulepreload" crossorigin href="/assets/file-CAniZHVy.js">
+    <link rel="modulepreload" crossorigin href="/assets/CommonUpload-BcH_I5zn.js">
+    <link rel="modulepreload" crossorigin href="/assets/use-form-data-CmYy3BS_.js">
+    <link rel="modulepreload" crossorigin href="/assets/user-DOb_zNiq.js">
+    <link rel="stylesheet" crossorigin href="/assets/router-BdmuEfSj.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-eavfng4J.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="ele-admin-loading">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+    </div>
+  </body>
+</html>

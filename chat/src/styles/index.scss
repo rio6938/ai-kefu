@@ -1,0 +1,3 @@
+/* 聊天窗样式入口, 只放全局重置与页面级变量 */
+@use './variables.scss' as *;
+@use './chat-window.scss' as *;

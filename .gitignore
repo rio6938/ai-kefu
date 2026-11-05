@@ -1,0 +1,52 @@
+# 仓库级忽略规则（子目录的 admin/.gitignore、server/.gitignore 保持原模板内容不变）
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+Desktop.ini
+nul
+
+# ---------- 本地临时目录：接口联调 / 文档抓取产物，不入库 ----------
+/.work/
+/.tmp/
+
+# ---------- 备份归档 ----------
+/admin/.backup/
+
+# ---------- 编辑器 ----------
+.idea/
+.openidea/
+.vscode/
+*.sw?
+
+# ---------- 后台管理端 admin/（入库的是构建产物，不是源码） ----------
+/admin/.env
+/admin/.env.local
+/admin/.env.*.local
+
+# ---------- 后端 server/ ----------
+# 本地配置文件含真实凭据，只入库 pkg/config 生成的示例：server -gen-config config.example.toml
+/server/config.toml
+/server/server
+/server/server.exe
+/server/*.exe
+/server/*.exe~
+/server/logs/
+/server/uploads/
+
+# ---------- 前端 chat/（独立项目） ----------
+/chat/node_modules/
+/chat/dist/
+/chat/.eslintcache
+/chat/.env.local
+/chat/.env.*.local
+/chat/npm-debug.log*
+/chat/yarn-debug.log*
+/chat/pnpm-debug.log*
+
+# ---------- 文档产物 ----------
+# 仅保留手写文档，不提交抓取临时文件
+/docs/.cache/
+
+# ---------- 环境变量文件 ----------
+/chat/.env

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>内嵌静态文件</title>
+</head>
+
+<body style="background: #fff;margin: 0;padding: 16px;">
+    <div style="text-align: center;margin-bottom: 8px;font-size: 18px;">
+        当前页面参数： <span id="paramsEl"></span> ，此页面是通过 iframe 内嵌。
+    </div>
+    <div style="text-align: center;margin-bottom: 8px;font-size: 18px;">
+        iframe 内嵌页面也支持 KeepAlive 。
+    </div>
+    <div style="text-align: center;margin-bottom: 16px;">
+        <input type="text" placeholder="测试 KeepAlive" />
+    </div>
+    <script>
+        document.getElementById('paramsEl').innerText = JSON.stringify(
+            Object.fromEntries(new URLSearchParams(location.search).entries())
+        );
+    </script>
+</body>
+
+</html>

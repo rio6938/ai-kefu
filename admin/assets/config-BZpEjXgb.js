@@ -1,0 +1,1 @@
+import{a as e}from"./router-BNLEuG7-.js";async function t(t){let n=await e.get(`/admin/config`,{params:t});return n.data.code===0?n.data.data:Promise.reject(Error(n.data.message))}async function n(t){let n=await e.put(`/admin/config/group`,t);return n.data.code===0?n.data.message:Promise.reject(Error(n.data.message))}export{n,t};
